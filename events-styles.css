@@ -1,9 +1,11 @@
 html {
     font-size: 16px;
+    /* Base font size for the document, controls scaling */
 }
 
 .big-container {
     height: 500vh;
+    /* Extends page vertically for scrolling space */
     max-width: 100vw;
     display: flex;
     flex-flow: column nowrap;
@@ -11,7 +13,7 @@ html {
     background-color: #DA0463;
     font-family: "Playfair Display", sans-serif;
     color: #DBEDF3;
-
+    /* Main container ensures centered content and maintains vertical structure */
 }
 
 .name-top {
@@ -19,6 +21,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* Flexbox used to center the title */
 }
 
 .buttons-bottom {
@@ -27,10 +30,12 @@ html {
     justify-content: space-between;
     flex-flow: row wrap;
     align-content: center;
+    /* Ensures buttons are spaced out evenly at the bottom */
 }
 
 .page-title {
     flex: 5rem 0 1;
+    /* Provides space for the title section */
 }
 
 h1 a {
@@ -40,10 +45,12 @@ h1 a {
     font-family: "Caveat", cursive;
     text-shadow: 3px 0 grey;
     font-weight: 400;
+    /* Styling for the main heading, applying a cursive font with a shadow effect */
 }
 
 button>a {
     text-decoration: none;
+    /* Ensures title link have no underlines */
 }
 
 .nav-btn {
@@ -60,14 +67,14 @@ button>a {
     text-align: center;
     margin: 5px;
     background-color: transparent;
+    /* Custom styles for the navigation buttons with bold text and a rounded shape */
 }
 
 body {
     background-color: #DA0463;
     text-align: center;
+    /* Background color for the entire page, aligning text to the center */
 }
-
-
 
 .container {
     flex-basis: 85% 1 0;
@@ -76,7 +83,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     background-color: #16423C;
-
+    /* Content container using a grid layout for a responsive structure */
 }
 
 .flex-container {
@@ -85,7 +92,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    /* Flex container centers its content both vertically and horizontally */
 }
 
 .card {
@@ -93,22 +100,21 @@ body {
     height: 100%;
     color: #C4DAD2;
     border: none;
-
+    /* Card styles, covering 100% of the space with a clean look */
 }
-
 
 .btn {
     max-width: 100%;
     height: auto;
+    /* Ensures buttons are responsive */
 }
-
-
 
 .card-img-top {
     width: 100%;
     height: 40%;
     object-fit: cover;
     border-radius: 0%;
+    /* Ensures the image fits the card properly without distorting */
 }
 
 .card-body {
@@ -120,16 +126,20 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    /* Defines the body of the card with a flexible layout and responsive height */
 }
 
 .ui .card-body {
     background-color: #C4DAD2;
+    /* Alternate card style for UI components */
 }
 
 .ui>.card {
     color: #16423C;
+    /* Card text color in the UI section */
 }
 
+/* Media queries for different screen sizes */
 @media (min-width: 768px) and (max-width: 820px) {
     html {
         font-size: 14px;
@@ -137,15 +147,15 @@ body {
 
     .big-container {
         height: 420vh;
-
+        /* Adjusts height for medium-sized screens */
     }
 
     .container {
         flex-basis: 90% 1 1;
         grid-template-columns: repeat(2, 1fr);
+        /* 2-column grid for medium screens */
         grid-template-rows: repeat(5, 1fr);
-
-
+        /* More rows for content fitting */
     }
 }
 
@@ -156,15 +166,14 @@ body {
 
     .big-container {
         height: 380vh;
-
+        /* Reduces height for smaller devices */
     }
 
     .container {
         flex-basis: 90% 1 1;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(5, 1fr);
-
-
+        /* Same grid layout for tablets and small screens */
     }
 }
 
@@ -175,15 +184,14 @@ body {
 
     .big-container {
         height: 350vh;
-
+        /* Further height reduction for smaller devices */
     }
 
     .container {
         flex-basis: 90% 1 1;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(5, 1fr);
-
-
+        /* Consistent layout for small screens */
     }
 }
 
@@ -194,15 +202,13 @@ body {
 
     .big-container {
         height: 300vh;
-
+        /* More compact height for narrow screens */
     }
 
     .container {
         flex-basis: 90% 1 1;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(5, 1fr);
-
-
     }
 }
 
@@ -213,14 +219,12 @@ body {
 
     .big-container {
         height: 350vh;
-
+        /* Slightly taller height for the smallest screens */
     }
 
     .container {
         flex-basis: 95% 1 1;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(5, 1fr);
-
-
     }
 }

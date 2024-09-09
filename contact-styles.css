@@ -1,9 +1,11 @@
 html {
     font-size: 16px;
+    /* Standard font size for the entire page */
 }
 
 .big-container {
     height: 300vh;
+    /* Tall container to allow vertical scrolling */
     max-width: 100vw;
     display: flex;
     flex-flow: column nowrap;
@@ -11,7 +13,7 @@ html {
     background-color: #DA0463;
     font-family: "Playfair Display", sans-serif;
     color: #DBEDF3;
-
+    /* Main container that centers content and ensures a structured layout */
 }
 
 .name-top {
@@ -19,6 +21,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* Centers the name/title section */
 }
 
 .buttons-bottom {
@@ -27,10 +30,12 @@ html {
     justify-content: space-between;
     flex-flow: row wrap;
     align-content: center;
+    /* Layout for the buttons at the bottom */
 }
 
 .page-title {
     flex: 5rem 0 1;
+    /* Space reserved for the page title */
 }
 
 h1 a {
@@ -43,6 +48,7 @@ h1 a {
 
 button>a {
     text-decoration: none;
+    /* Removes underlines from links of the title */
 }
 
 .nav-btn {
@@ -59,11 +65,13 @@ button>a {
     text-align: center;
     margin: 5px;
     background-color: transparent;
+    /* Styled navigation buttons with curved edges and transparent background */
 }
 
 body {
     background-color: #DA0463;
     text-align: center;
+    /* Keeps background consistent with the main container */
 }
 
 h1 a {
@@ -82,6 +90,7 @@ h1 a {
     align-items: center;
     color: #FFDC7F;
     text-align: center;
+    /* Centers content inside this container with yellow text */
 }
 
 .container-2 {
@@ -90,10 +99,12 @@ h1 a {
     justify-content: space-evenly;
     align-items: center;
     flex-basis: 20%;
+    /* Flexible container that wraps content evenly spaced */
 }
 
 .container-2 * {
     flex-basis: 20%;
+    /* Ensures uniform space distribution among children */
 }
 
 .container-3 {
@@ -101,7 +112,7 @@ h1 a {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    /* Centers items inside container-3 */
 }
 
 .formular {
@@ -109,24 +120,29 @@ h1 a {
     justify-content: center;
     align-items: center;
     flex-basis: 40%;
+    /* Form section centered with 40% space */
 }
 
 input {
     border-radius: 20%;
     border: none;
     color: green;
+    /* Rounded input fields without borders and green text */
 }
 
 textarea {
     border-radius: 20%;
     border: none;
+    /* Styled text area with rounded edges and no borders */
 }
 
 img {
     width: auto;
     height: 60px;
+    /* Scales images to a height of 60px while keeping aspect ratio */
 }
 
 label {
     color: #FFDC7F;
+    /* Yellow text for labels */
 }

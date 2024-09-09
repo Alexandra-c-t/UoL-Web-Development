@@ -1,9 +1,11 @@
 html {
     font-size: 16px;
+    /* Base font size for the entire document */
 }
 
 .big-container {
     height: 350vh;
+    /* Height ensures sufficient vertical scrolling space */
     max-width: 100vw;
     display: flex;
     flex-flow: column nowrap;
@@ -11,6 +13,7 @@ html {
     background-color: #DA0463;
     font-family: "Playfair Display", sans-serif;
     color: #DBEDF3;
+    /* Main container for the title and buttons, centers content vertically */
 }
 
 .name-top {
@@ -18,6 +21,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* Centers the name/title at the top of the page */
 }
 
 .buttons-bottom {
@@ -26,10 +30,12 @@ html {
     justify-content: space-between;
     flex-flow: row wrap;
     align-content: center;
+    /* Space for navigation buttons at the bottom of the container */
 }
 
 .page-title {
     flex: 5rem 0 1;
+    /* Reserves space for the page title */
 }
 
 h1 a {
@@ -39,10 +45,12 @@ h1 a {
     font-family: "Caveat", cursive;
     text-shadow: 3px 0 grey;
     font-weight: 400;
+    /* Styling for the main heading, includes a text shadow effect */
 }
 
 button>a {
     text-decoration: none;
+    /* Ensures no underlines on links inside buttons */
 }
 
 .nav-btn {
@@ -59,14 +67,14 @@ button>a {
     text-align: center;
     margin: 5px;
     background-color: transparent;
+    /* Custom button styling with round edges and centered text */
 }
 
 body {
     background-color: #DA0463;
     text-align: center;
+    /* Background matches the big container's color for visual consistency */
 }
-
-
 
 .biggest-container {
     flex-basis: 90%;
@@ -74,6 +82,7 @@ body {
     display: flex;
     flex-direction: row;
     background-color: #F9E2AF;
+    /* A larger container to hold two sections (div-1 and div-2) in a row */
 }
 
 .div-1 {
@@ -83,6 +92,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* Left column for additional content or navigation */
 }
 
 .div-2 {
@@ -90,11 +100,13 @@ body {
     padding: 5%;
     display: flex;
     flex-direction: column;
-    color: #009FBD
+    color: #009FBD;
+    /* Right column with main content, using a vertical layout */
 }
 
 @media (min-width: 1px) and (max-width: 880px) {
     .biggest-container {
         flex-direction: column;
+        /* Switches layout to column on smaller screens for better readability */
     }
 }
